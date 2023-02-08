@@ -1,0 +1,98 @@
+Why Array:
+Since for storing and working with individual values or records we prefer creating the variables of different data type
+and use it accordingly. For eg. Question is to store a person's name, salary or anyone's information individually we can
+use datatype like int, String, char, float, byte, long etc. and then can create a variable of different names according
+to need like - int roll, char letter, String name, float marks, long salary .. and others too accordingly.
+But if Question comes to store values or records for a group for eg. store name of 50 students in a class, salary of men
+and many more that involves group. One thing we can do is that we can create as many different variable of same datatype
+accordingly and use that but that is time consuming as well as not the efficient way to do it. Instead of it if there is
+any data structure which helps doing all these stuffs basically that is Arrays for sure.
+Arrays is telling that come to me am able to provide you the services that you are searching for. It is the collection of
+same data type means you can store values of group but that should be of same data type, otherwise it will show the error
+for eg. we have made a int array for storing rolls of students  but if we try to accommodate in it if it is of other types
+than defined one then it can be added in that array. Simple can say that Array is used to store and operate on multiple
+values but for same data types at once.
+
+What Array does:
+Initialization of array- syntax
+   datatype[] variable_name = new datatype[size of the array];
+
+   for storing id of a employee, can create int array for doing this
+   int[] id = new int[20];                       if there are 20 people out there.
+   can use a loop to insert values inside it. or can directly put values in the array like..
+   int[] id = {11,23,30,54,15,.........,20};     ids of 20 different people.
+
+   similarly we can create array of different data type according to the need.
+
+How Array Works:
+
+Memory management of array is something that is necessary to understand. There is a stack memory and a heap memory. As
+it is obvious that stack memory is used to store primitive types, reference variables, different methods and object creation
+is done in the heap memory or the thing that is related to object of different non primitive data types.
+
+for eg. in the above we write int array of id, so can understand according to the memory management ..
+id is a reference variable that is pointing to the array object of type int.
+
+int[] id;         declaration of the array, reference variable id is defined, at compile time
+new int[size];    initialization : actual memory allocation during runtime i.e also called dynamic memory allocation
+new keyword is used to create the object of different data structure or classes.
+Equal to sign basically builds the relation where reference variable is pointing to heap memory where objects created.
+
+Next thing that is specific to know that how the values are stored in the arrays.
+If Array is of primitive data type then the object which created will be initialized in the heap memory with the value 0
+for each indices of the size where as if it is of type non primitive then instead of 0 it is null. Null is a special literal
+which can be assigned to the non primitive object since the each indices are itself pointing to another object, so the
+null is used in place of 0. null can not be used as a data type or can not be initialized for primitive datatype.
+Just like other programming language c++ has pointers which tells the address of the memory and in Java we do not have
+any concept like pointers, one thing to remember indexing in java starts from zero(its like a place in the memory). In java
+the values stored in the arrays are not in the continuous manner but depends upon the JVM( it is responsible for management)
+since heap memory is responsible for creating the object and it happens at run time that is why it is called dynamic memory
+allocation and heap objects are not continuous, depends upon the JVM as said before.
+If the array is of complex data type which means non primitive then the array will basically be collection of reference var
+which points to the object if not initialized will be seen as null if try to print the value of that indices.
+String[] name = new String[5];
+so if we do not push the values in the array and try to print the value then it will print the null.
+
+Now time to code....to understand about input and output .....
+
+Pass by value / Pass by references
+In Java, all primitives like int, char, etc are similar to C/C++, but all non-primitives (or objects of any class) are always
+references. So it gets tricky when we pass object references to methods. Java creates a copy of references and pass it to
+method, but they still point to same memory reference. Mean if set some other reference to object passed inside method,
+the object from calling method as well its reference will remain unaffected. The changes are not reflected back if we
+change the object itself to refer some other location or object If we assign reference to some other location, then changes
+are not reflected back in main(). Changes are reflected back if we do not assign reference to a new location or object:
+If we do not change the reference to refer some other object (or memory location), we can make changes to the members and
+these changes are reflected back.
+
+
+
+2D Arrays
+It is arrays of arrays. since we know how the memory management of arrays works similar works with the 2D arrays too. where
+in the heap memory it is collection of references of arrays. Rows and columns are specific term that is needed to be understood
+while initializing the 2d array there is must to define the rows but not columns. that is why length of it refers to the no. of rows
+for eg.
+int[][] array = new int[rows][columns];
+when we run the program dynamic memory allocate for the object creation, int the heap memory it will look like this
+[[reference of array],[...],[...]]
+       |pointing to
+     [1,2,3] it can be present anywhere in the memory, same applies to others too.
+
+length of 2d array = no of rows defined while initialization of the 2D arrays.
+
+Now time to code....to understand about input and output .....
+
+
+
+Arraylist
+Simply if do not know the size limit but also want put values as much come across. There is a data structure called Arraylist
+for helping us. In this we have to define only initialization of the length then internally it doubles the size if crossed the
+defined limit so we can store values as much we want without thinking about the size if we do not know.
+
+Now time to code....to understand about input and output .....
+
+How it happens actually when cross the initial capacity, arraylist creates a copy of that reference and make a new arraylist of doubling
+the size and then old elements are copied in the new arraylist and do the same if cross the capacity again. Old arraylist will be
+deleted automatically due to garbage collector since the objects which do not have any use deleted from the heap.
+
+for multidimensional arraylist it works same as 2d arrays for the conceptual thing and rest will understand by coding.....

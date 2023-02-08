@@ -1,0 +1,37 @@
+Searching
+After knowing data structure like arrays, String, one thing first is that searching for an element in it.
+Finding an element in the arrays come up with mainly two approaches linear search, binary search. Different type of
+problems can be come up with like replacing values, is vowel/constant present or how many of it are there, manipulating
+values at particular index so that needs to get reach at that particular point and many others. Then some problems also
+directly come up with sorted arrays and then thinking problems like this so to use different algorithm choosing based on
+the problems demands.
+
+Linear Search
+start searching from the first element and search till you find the required value as simple as that.
+for eg. int[] arr = {22, 35, 31, 56, 78, 76, 5};
+Question to check whether 78 is present or not. So start checking from the starting element till reaches the value 78.
+can do it using for loops or for each loops for simplicity. we can get the index of 78 too and after finding it, we can
+do some manipulation if required.
+
+Time to code .....
+
+Binary Search
+If the array is sorted, or have to do searching on sorted arrays then Binary Search is the efficient approach to do.
+sorted means arrays elements can be in ascending order or descending order. Actually in it, instead of searching one by
+one from starting index to end, first find mid element (using start and end) then check target lies in which section means
+start - mid or mid - end, then do operations accordingly and again do find mid element in each section till we find the
+target if present. With this process time complexity for binary search would be O(log(n)) that is far better than linear
+search in the worst case. Since at each level we do operation on the halves so the process becomes more efficient.
+
+In the starting if the array is of size n, and the process goes on then the array is divided into two halves and after
+checking we go with one half and same process applies again and again till we rich the final result. At each level the
+number of comparison is N/2 to power k     where k = 0,1,2,3,4.........
+at final we reach the last element at the kth level. so
+      N/2 to power k = 1
+      N = 2 to power k
+      doing log both sides
+      log(N) = log(2 to power k)
+      log(N) = k log(2)
+      k = log(N) / some constant, k is number of comparison.
+
+Time to code .....

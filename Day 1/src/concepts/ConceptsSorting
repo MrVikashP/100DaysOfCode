@@ -1,0 +1,107 @@
+Sorting
+when have a problem to arrange the values in ascending order .
+for eg. int[] arr = {7,6,4,3,2,1}, sorted means {1,2,3,4,6,7}. Now this can be achieved via different algorithms, gonna
+understand them one by one. Start with the what its doing then focus on the how its doing that is the coding part.
+
+
+Bubble Sort
+In bubble sort, compare the adjacent element if the next index element is smaller than the previous index value then swap
+the values and repeat it till reaches the limit. Doing this wll get the largest element at the last index with the 1 pass
+and 2 pass place the second largest element at the second last index and it goes on and on till the process done.
+It is also called the sinking sort or exchange sort. It full fills the stability criteria in which the order is maintained.
+ Let it understand with the example.
+
+int[] arr = {7,6,4,3,2,1}; have to sort this using bubble sort
+we have one counter loop for doing for every element and the one is inner loop which compare the adjacent elements and by
+every pass decrease its last limit by one since by every pass we the largest element so no need to compare with those index.
+
+Time complexity:
+best case : O(n)
+since if the array is sorted in starting so for doing it only one pass is required and we get the results by
+doing n comparison only since no swaps happened so that can be called as BIg O of n.
+worst case : O(n square)
+if the array is arranged in the descending order then have to do n pass for every cases so that gives the Big O of n square.
+
+Space Complexity: O(1) since no extra space is taken to sort the array means did not created a new array so it is called inplace.
+
+Time to code ....
+
+
+
+Selection Sort
+In selection sort, as the name suggests first step is selecting the element either max or min among the values in the array
+after it place the element at its right place means if selected max then place it at last index and for min it would be the first,
+and repeat it again till reaches the condition. Same like bubble sort with every pass maximum or minimum are placing at the right
+places so for the next pass we can ignore that and can repeat the previous steps at the required places and repeat the ignoring
+concept till necessary. It is not stable sorting algorithm where the position order is maintained.
+
+int[] arr = {7,6,4,3,2,1}; have to sort this using selection sort
+we have one counter loop for doing for every element and the one is inner loop which gets the max or min of that array and do the
+particular operations that with every pass place it at the right index.
+
+Time complexity:
+best case : O(n square)
+since if the array is sorted in starting then also for finding max in the array have to do n comparison and placing it at
+the right places needs to follow the same since we can not make a check to get the break condition. Comparison is like
+n-1, n-2, n-3, .......1, 0 -> {(n-1)*(n-1+!)}/2 (sum of natural numbers formula) ultimately max power we get is 2, rest can be ignored.
+worst case : O(n square)
+if the array is arranged in the descending order then for same applies like the best case.
+
+Space Complexity: O(1) since no extra space is taken to sort the array means did not created a new array so it is called inplace.
+
+Time to code ....
+
+
+
+Insertion Sort
+In insertion sort, basically with every pass we go ahead with having sorted values till that index. It means like for the first pass
+the array become sorted till index 1 and the process repeats again and this way every pass sorts the array till that particular
+index. Like if the size of the array is five, then first pass sorts upto index 1, then next pass sorts upto index 2 and so till pass
+second, values are sorted till index 2 so the every next pass achieve the same thing by sorting first and then move ahead. No of swaps
+can be reduced in it in comparison to bubble sort, and it is also a stable sorting algorithm.
+
+int[] arr = {7,6,4,3,2,1}; have to sort this using insertion sort
+we have one counter loop for doing for every element and the one is inner loop which sorts the array till that particular index
+and then move ahead with the same concepts and do it till reaches condition.
+
+Time complexity:
+best case : O(n)
+since if the array is sorted in starting then every pass sorts the array till that index but int inner loop there a condition
+that if the previous element is smaller than the current one then the loop breaks since the for every element only 1 time inner loop
+will run and then just break due to the condition.
+worst case : O(n square)
+if the array is arranged in the descending order then for sorting it comparison will be like n-1, n-2, ....2,1 so the max power be 2.
+
+Space Complexity: O(1) since no extra space is taken to sort the array means did not created a new array so it is called inplace.
+
+Time to code ....
+
+
+
+Cycle Sort
+when given range of 1 to n use cyclic sort without thinking much and we can sort the array efficiently. Since the indexing in
+starts with 0, and we know that the values in the array is from 1 to N like natural numbers and after sorting each number
+will be placed at the right index and we keep our eyes on the right index then we get to know that the right index for any value
+will its (value - 1), like 1 is placed at 0 same 2 is placed at 1 so on and on. first check the value of starting index and check
+weather it is at right index or not, if at right place leave it otherwise swap the values at the right index and again check for
+the new value after swapping that is it on the right index and repeat the previous steps to reach the results.
+
+int[] arr = {7,6,5,4,3,2,1}; have to sort this using cycle sort
+we have one counter loop for doing for every element and the one is inner loop which checks the right index for each and do swaps
+if needed and repeat this for the next and finally we get to reach the results.
+
+Time complexity:
+best case : O(n)
+since if the array is sorted in starting then every element is at the right index so n-1 comparison will be taken.
+worst case : O(n)
+if the array is arranged in the descending order then for sorting it comparison will be like (n-1) + n.
+
+Space Complexity: O(1) since no extra space is taken to sort the array means did not created a new array so it is called inplace.
+
+Time to code ....
+
+
+
+
+
+
