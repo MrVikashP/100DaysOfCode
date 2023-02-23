@@ -1,0 +1,11 @@
+Main use case of String Builder is that no new object is created everytime. Objects can be modified and is possible
+using it, Although all the properties can be understood as same.
+It is like special beneficial power is given to String by using String Builder.
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < 26; i++) {
+            char ch = (char) ('a' + i);
+            // no new object is created, modified in the existing one
+            builder.append(ch);
+        }
+        System.out.print(builder);

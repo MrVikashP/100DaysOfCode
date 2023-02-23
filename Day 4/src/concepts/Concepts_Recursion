@@ -1,0 +1,64 @@
+Merge Sort
+1. Divide the array into two halves
+2. get both part sorted via recursion
+3. merge both the halves accordingly
+
+If to sort the array using merge Sort :
+Idea behind the scene is that is that divide the array into two halves and then sort individually and merge them to get
+the final sorted array.
+so this is done via recursion - so three things need to take care of.
+1. base condition
+  since we are dividing the array into two halves and at any point we have array of size 1 means only one element is
+  there so in that case return the array when the size become 1 or only single element is available.
+
+2. body of recursion and the arguments of it
+  for dividing into halves, have to get the mid of the array and then use "Arrays.copyRangeOf()" copyRangeOf() method
+  of the Arrays class to get the new array of different size with the help of mid since dividing into two halves. this
+  method will take the original array, start point and the end point to make the copy of that range and use that array.
+  Then after getting left and right part then call the merge method that takes these arrays and then return after merging.
+
+3. return type and the calls of function
+  return type would be array since after merging the two halves will get a new array again since space complexity is not
+  constant. Since in merge method we create a new array that will have length of sum of the two parts of the array.
+  Then start adding the smaller elements first and then when anyone of two reaches its size then add directly to the ans
+
+Time complexity
+No of comparison : Since array is being halved every time so at the end there will be 1 element so the equation would be
+N / 2 to power k = 1, K = log2N. means there would be logN comparison.
+No of levels : At each level no of elements is N elements since array is divided into two parts but combined there is
+N elements there if to look at the total elements
+O(NlogN) is the time complexity.
+
+
+Quick Sort
+1. find pivot- any random element you can choose
+2. With every pass elements smaller than pivot will be at left hand side and the greater elements will be at right side
+   according to the the position of the pivot.
+3. since at the end pivot will be at the correct index then take the two halves one is before the pivot and the other
+   is after the pivot and do the same till the array is sorted.
+
+How to do :
+can use two pointer approach at the start and the end and check if the start is smaller than pivot and the end is greater
+than the pivot element, can use while loop here and if found breaking the condition then swap between the two.
+In most of the cases we take pivot as the last element of the array but can choose any of them
+
+how to choose pivot and the time complexity
+1. if pivot is chosen as the smallest and the largest element in the array
+  then recurrence relation would be : "T(N) = T(N-1) + T(N)"
+  T(N-1) because the pivot is the smallest or the largest means that either pivot is at the start oe end so have to ignore
+  the left or right part so only there will be N-1 elements to be taken care of and this is worst case where recursion calls
+  T(N) to choose the pivot to place it at the right place.
+
+  time complexity - O(N square)
+
+2. if pivot is middle element of the array
+   then recurrence relation would be : "T(N) = T(N/2) + T(N/2) + T(N)" -> 2T(N/2) + T(N)
+   since the pivot is at the mid so there will be two halves of the array and then can make recursive call to both halves
+   T(N) to choose the pivot to place it at the right place.
+
+   time complexity - O(N logN)
+
+Features
+1. Not stable : means position of the element may be not be the same after sorting
+2. InPlace sorting is best in the quick sort since it can be done in the constant space where merger sort needs O(N)
+3. Merge sort is best for linked list(random memory location) where as quick sort is for continuous memory.

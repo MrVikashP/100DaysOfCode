@@ -1,0 +1,101 @@
+As other different data type String is one of them in the non primitive type, It is a collection or sequence of the chars
+for eg. String name = "Vikash Pandey"; Here the value inside the double cotation is a collection of the characters, so
+name is a reference variable of type String that is pointing the Vikash Pandey a collection of characters.
+
+Initialization
+String ref_var = "value" or if not assigned it will point to null.
+String ref_var = new String("value");
+
+Two concepts in understanding the String like String Pool and Immutability are important to know
+
+String Pool : It is a separate area in the heap memory for creating objects of type String, the primary use case of it is
+that it prevents the creation of the object of existing similar String objects. It means that if the two different ref
+var is pointing to the same object rather than two different object of similar value. It is good for the memory management
+and the optimization. for eg. String name1 = "vikash", String name2 = "vikash" so both name1 and name2 is pointing to the
+same object in the string pool since it prevents creation of different objects for similar values.
+
+Then question arises what if one ref var is doing changes then will it affect the other ref variable values or changes
+in the String objects management. Unlike Arrays where changes made via any ref var will be seen and affects the others.
+
+IMMUTABILITY is truth means String objects cannot be changed means we cant make changes in the String but we create new
+object for any changes or values being updated. for eg. String name = "vikash", String name = "pandey" if written respective
+It means no any changes being done to object vikash but the new object pandey is created in the second time and garbage
+collector will manage then those objects that is not pointed by any ref var so can be removed automatically no need to worry.
+
+So internally for String objects similar values will be pointed to the same object int the string pool but we can tell java
+explicitly that make a different object everytime even for the similar values like using new keyword
+for eg. String name = new String("vikash"), String name = new String("vikash")
+In the above example string objects are created using new keyword means object creation will be normal like others
+means there is no string pool for those String objects. Two different objects are created for the similar values "vikash"
+here concept of string pool not matters when object creation is being using new keyword.
+
+so if want to check whether two different ref var is pointing to the same object then use "==" operator and if want to
+check the values of the objects only then use .equals method. Both have different use cases so can be used accordingly.
+
+Output : Basically all the thing that is printed on the print screen is the Sting value of different data types.
+System.out.println(65), System.out.println("vikash"), System.out.println(new int[]{2,3,4,5});
+
+for anything in the argument of the "println" method will call "value of" method then it will called "to string" method for
+any datatype means ultimately we are getting the string value of different data types. like if there is int value then also
+we print the string value of it and same for the arrays. For the objects case there is way defined internally the different
+Sting value for the different objects using "get class name"...."@" ...."hashcode" so we can override the "to string" method
+like for array we use Arrays.toString(pass the object) then will print the values of the array beautifully, since it overrides
+the internal "to string" method that will print some random values.
+
+when we compile and run the Java program in the terminal we write different commands like javac for compiling and others too
+so that is stored in the "String[] args" args of Sting array. Command line args stored in it.
+
+Pretty Printing :
+It is used to print any number ot other thing with the use of place holder
+for eg. 1. float grade = 45.94673897f, System.out.printf("formatted no : %.2f" + grade):- output -> 45.94
+so will print the grade upto decimal 2 places.
+2. System.out.printf("Pie : %.3f" + Math.PI):- output -> 3.142
+3. System.out.printf("I am %s and want some grace of %s" + "vikash" + "Shiv"):- output -> I am vikash and want some grace of Shiv
+so we have to place the values respective to the different place holders.
+Different Placeholders in Java :> Written some of them that is defined too.
+%c : Character
+%d : Decimal Number (Base 10)
+%f : Float- Point Number
+%e : Exponentially Float- Point Number
+%i : Integer (Base 10)
+%s : String
+%0 : Octal Number (Base 8)
+%x : Hexadecimal (Base 16)
+%t : Date/Time
+%n : Newline
+%u : Unsigned Decimal(Integer) Number
+
+
+
+Operators :
+System.out.println('a' + 'b') -> 97 + 98 : 195
+Here char a and b is converted to int then we get the sum.
+
+System.out.println('a' + 3) -> 97 + 3 : 100 can be printed as d using (char) typecasting
+
+System.out.println("a" + "b") -> ab, when add operator used in string it just concatenate with each other
+
+System.out.println("a" + 1) -> a1, same explanation as above but in addition can say 1 is converted to its String value using to string
+method since integer gets converted into wrapper class Integer and at the end it becomes like "a" + "1" and then concatenate.
+So when there is object that will call to string method then converted into a String
+
+System.out.println(new ArrayList<>() + new Integer(46)) -> compilation error
+
++ operator or any other operator is made for primitives but for the string Java provided extra functionality for string to concatenate
+but for adding different complex data types it shows error because that is not defined directly so if there is any String data then that
+will work fine as above discussed.
+System.out.println(new ArrayList<>() + "" + new Integer(46)) -> []46
+
+Performance
+Since we know that everytime new object is created, no change in the existing object can be made in the string
+for (int i = 0; i < 26; i++)
+  char letter = (char) ('a' + i)
+  sout(letter)
+
+Output : abcde.........z
+Everytime new object is created so can say it is O(N square)
+
+
+
+
+

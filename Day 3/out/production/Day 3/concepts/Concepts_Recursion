@@ -1,0 +1,20 @@
+Function calling itself is known to recursion.
+Before recursion we create different methods and make a call to each other for doing tasks and when the execution finished
+then it will come out to where it was called to. But in recursion no need to make multiple function for the task, one
+function is able to do it alone by calling itself, important thing is to take care of the base condition. Since function
+calls itself if not get stopped then when stack gets full then we get stack overflow error that will not the best for the
+optimization and the memory management.
+
+Why recursion
+1. It makes easy to solve the bigger or complex problems.
+2. Every recursive solution can be converted to iterative solution
+3. Code looks cleaner and smooth using recursion
+4. Bigger problems breaks down into smaller problem using recursion
+5. Space complexity is not constant since due to function calls that takes separate memory allocation till it gets executed.
+
+Can make a flow of function call and the returning of the function that is called recursive tree.
+
+Three things to take care of
+1. Arguments : put things that are going to be used in the next function call in the arguments
+2. Body : Use different variable accordingly and use it for managing things in the arguments
+3. Return : return everytime when dealing with the function calls.

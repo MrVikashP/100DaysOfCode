@@ -1,0 +1,46 @@
+Why linked list and What is it ?
+If we aside the thoughts or aspects that says about the memory management of the array is managed by JVM. Can say that
+elements are stored in an array in a continuous manner. Imagine a ground with boundaries where all persons are in a line
+so there must be a length of the boundary from where no person can fit in following the rules that says have to be in a
+continuous manner or be in a line. Same happens within array where each element is placed in a continuous manner with
+others and indices are there for tracking the location and the can do useful operation with help of it.
+But if beyond the limit try to insert elements it will show out of bound error or array is full, this become an issue
+when we do not know the limits or number of elements in the starting.
+To overcome this Array List comes into picture but since it double the size and then copy the existing elements in it and
+use it as the original array for the next internally, since it takes constant time then also it is not more efficient.
+
+So Linked List data structure is there to help us to deal with the limitation of the size. If we understood each element
+in an array as a box which is placed continuously but in Linked List these boxes are placed randomly in the memory, where
+each box is pointing to another box that is not necessary to be in order.
+Three term is used :- Node, Head, Tail
+Node :- we call the box in linked list as a Node, that is placed randomly in the memory and is pointing to another node.
+Each Node contains two things :- first is own integer value and the other is another node whom it is pointing to.
+Head :- very first node in the linked list is called the head. Starting point basically is called head
+Tail :- last node of the linked list is called the tail. End point is the tail of the linked list.
+
+Types - Singly, Doubly, Circular.
+
+We can think of a move where drug racket happens and the cops are searching for them. We observe that if any dealer gets
+caught by a police then that person only has two things their own personality and the one person above them who give them
+order and they operate being located at random places. Linked List concepts can be understood by these scenes.
+
+
+Singly Linked List
+In this linked list each node can have two things its own identity value and the another next node whom it is pointing to
+but do not have information about the previous node. There will be head and tail defined with different scenarios.
+Have to do operations on the node by knowing these properties.
+
+
+Doubly Linked List
+In this linked list each node will have three things its own identity value, the another next node whom it is pointing to
+and the  previous node which exist before the current node. There will be head and tail defined with different scenarios.
+Have to do operations on the node by knowing these properties. In this previous of head is null and next of tail is null.
+
+
+Circular Linked List
+In this linked list each node can have two things its own identity value and the another next node whom it is pointing to
+but do not have information about the head and tail, since nodes are in a circular manner means the starting and the ending
+point will be at the same place. Similar to singly but these make it different from the other.
+Have to do operations on the node by knowing these properties.
+
+Time to code ):
