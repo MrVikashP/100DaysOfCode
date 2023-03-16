@@ -1,0 +1,10 @@
+Stack data structure follows Last in Last out - LILO properties or First in First out - FIFO properties.
+
+for eg. - We can understand using daily life examples like when we go to watch movies, first thing we encounter is ticket
+counter where people are standing making a line where no corruption allowed since people will start fighting. so the first
+person who is in line will get the ticket first and then rest people will take ticket in the same way.
+
+Push means entering the elements.
+Pop means deleting the elements.
+
+Insertion and deletion takes constant time, since it is implemented as array internally.

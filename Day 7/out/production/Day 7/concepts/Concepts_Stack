@@ -1,0 +1,15 @@
+Stack data structure follows Last in First out - LIFO properties or First in Last out - FILO properties.
+
+Since in recursion we understand about stack memory where function gets removed when its work is done and last function
+gets removed first and then respectively other function will do the same. That is why the main function is removed at last.
+and we get the output at the screen.
+
+for eg. - We can understand using daily life examples like when we go to any marriage Eating is the most valuable thing
+we never miss so when entering the arena, food plates are placed in an order and different person go and take their plates
+and then starts enjoying the meal. When noticed the last plate that is above all will be taken first and then same for all.
+
+Push means entering the elements.
+Pop means deleting the elements.
+
+Insertion and deletion takes constant time, since it is implemented as array internally.
+
