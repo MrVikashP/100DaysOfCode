@@ -1,0 +1,10 @@
+Hashset is a data structure which is widely used in the programming, It is very popular when comes to time complexity
+since it provides amortized time complexity- O(1) for various operations like insertion, searching, deletion...
+Unlike arrays or other data structure which sometime gives amortized time complexity for some operation but not for all
+so it is known for its time complexity or when comes to optimizing the code.
+
+Internally it is also an array but it is not necessary that elements stored in a continuous manner, so it is an unordered
+way of storing element it may possible that sometime elements stored in a continuity but not all time
+
+Like we studied sets in maths, here applies the same. Hashsets avoids duplicate.
+It means if given many numbers and have to do operation on the unique elements then it is quite useful data structure.

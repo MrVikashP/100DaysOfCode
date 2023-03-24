@@ -1,0 +1,10 @@
+In Hashmap, two things to keep in mind - key , value.
+Hashmap data structure contains two things in pair- key and value where key is always unique value, value may be same for
+many or may not be same for others.
+so when need to do operations maintaining unique values and have to get some result accordingly, use Hashmap data structure
+for that particular problems, time complexity may be amortized for most of the cases so it is also a useful data structure
+when comes to optimizing the solution .
+
+for eg. store roll, name of students in a class and have to do operations then Hashmap can be used.
+since roll will always be unique so it comes in the key and as we know name can be same for many students so it comes in
+values. then can perform operations accordingly.
