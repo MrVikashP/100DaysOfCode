@@ -1,0 +1,28 @@
+We have studied different data structure like array, stack, queue that are linear data structure, Trees are hierarchical
+data structure, so when in need to store things in the hierarchical manner this can be used.
+
+Important terms - Roots, Nodes, Leaves
+
+In tree we have leaves, branch, root. Like this we have the structure in the DS but in reverse.
+
+Roots is the topmost item, it has branches (in binary search tree max branch can be 2), branch is called the nodes
+
+In binary search tree, root can have two nodes - left , right. The node which do not have any branches is called leaves.
+
+Special properties in BST
+1. Left Node value < ROOT value
+2. Right Node value > ROOT value
+3. Left, right sub tree works like BST and will not have any duplicates (mostly).
+
+Traversal
+- DFS
+1. PreOrder - Root, left, right
+2. InOrder - left, root, right - always give sorted sequence
+3. PostOrder - left, right, root
+
+-BFS
+1. Level Wise - Queue is used.
+
+Diameter of tree = no of nodes in the longest path between 2 nodes.
+
+
