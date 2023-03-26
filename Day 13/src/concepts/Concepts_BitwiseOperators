@@ -1,0 +1,60 @@
+Operators :-
+And (&) - if both is true then result is true
+If &(and) 1 with any number then digits remain the same.
+
+OR (|) - if any of the true then result is true
+
+XOR (^) - if and only if one is true then result is true
+if num ^ with 1 - compliment of num
+if num ^ with 0 - num itself
+if num ^ num - 0
+
+Number System
+Decimal - base 10 - O to 9
+Binary - base 2 - 0, 1
+Octal - base 8 - 0 to 7
+Hexadecimal - base 16 - 0 to 9 A B C D E F
+
+Conversion
+1. Decimal to any base - keep dividing by the base till it lies in their range and return in the reverse order
+2. Any base to Decimal - multiply and add the power of base to the digits
+
+Left shift
+(<<) left shift the bits accordingly when need any extra use 0 in that place
+1100 << 1 - 11000
+Any number << 1 - number * 2
+a << b = a * 2 to power b
+
+Right shift
+(>>) right shift the bits accordingly.
+1100 >> 1 - 0110
+Any number >> 1 - number / 2
+a >> b = a / 2 to power b
+
+Negative of a binary number
+1 byte = 8 bits - 0    0 0 0 0 0 0   0
+                 MSB(- or +)        LSB(Even or odd)
+          Most Significant bit      Less Significant bit
+
+steps -
+do compliment of num
+add 1 to it.
+
+Range formula -> 2 to power n-1 to 2 to power n - 1  - 1
+
+Sum of any row in the pascals triangle is 2 to power n- 1, if index starts with 0;
+ans = 1 << (n-1) - 2 to power n- 1
+
+Check whether a number is power of 2
+bits of that number contains only 1 so
+ans - n & n-1.
+
+Decimal to binary- Integer.toBinaryString(num);
+
+RightMost Set bit - n & (- n)
+
+Q. find Xor from 0 to any number b
+b % 4 == 0 -> Xor till b = b
+b % 4 == 1 -> Xor till b = 1
+b % 4 == 2 -> Xor till b = b + 1
+b % 4 == 3 -> Xor till b = 0
