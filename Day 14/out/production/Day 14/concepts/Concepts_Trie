@@ -1,0 +1,20 @@
+Trie data structure comes under non linear. It is often called with the name prefix tree, digital search tree, Retrieval
+tree. Basically these names is given to it due to its working. Prefix tree because it stores values using the prefix since
+no prefix will be repeated if having same for different values. Retrieval is used because it is used to find the values in
+the tree and 'trie' is found in the Re'trie'val  itself.
+
+Have known about binary tree and binary search tree where a root can have maximum two nodes. Doing different operation in
+the BST takes efficient than others because of its time complexity O(log n) in if the tree is dispersed in a balanced way.
+
+In trie :> root can have multiple children so called K node tree. where time complexity would be O(length of the word)
+
+Creating a trie
+1. root is initially empty
+2. store each letter of the word by checking letter should not be present in the tree before - prefix is not repeated
+3. where the letter ends mark it as EOW - End of the word.
+
+Since a root can have multiple nodes so when we define the "Node class" it will have a array of size 26 if talking specific
+about the words otherwise 256 will be size for all the characters or special values and a boolean EWD to check letter's end
+
+Finding word or storing words when asked can use trie data structure for it.
+
