@@ -58,3 +58,5 @@ b % 4 == 0 -> Xor till b = b
 b % 4 == 1 -> Xor till b = 1
 b % 4 == 2 -> Xor till b = b + 1
 b % 4 == 3 -> Xor till b = 0
+
+Time to code.
