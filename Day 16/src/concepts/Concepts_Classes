@@ -1,0 +1,32 @@
+Question - Store 10 roll numbers, Int array may be used for solving it.
+Questions - Store 10 names, String array may be used for solving it.
+
+Questions - Store 5 Cars or Store 10 Students or 100 Employees or something which try to store the collection of property.
+For these type of problems, classes are come into the mind to use.
+When we want to need some data structure to store collection of properties, or need to define our own data type- classes
+are used solving these kind of situation.
+
+Class - named group of properties and function or also be defined as collection of set of rules and regulation to take care of.
+It is something that is not physically present but with the help of it we can make multiple physical entity.
+
+Classes - logical construction for objects.
+Objects - physical reality of the classes.
+
+Object are the instance of the class that can use the properties that a class holds of which it is type of.
+Student student1; // declaration
+here student1 is called a object which is an instance of a class student. So can say this also that a reference val of
+type Student is declared. student1 is a reference variable of type Student
+
+student1 = new Student(); - new keyword is used to allocate the memory in heap means the object of type Student is created
+in the heap memory at the runtime so it says new is used to dynamic allocates memory in the heap for the object creation and
+return a reference to it. so now student1 is a reference variable which is pointing to the object of type Student.
+
+Student() - is a constructor which is a special function in the class which tells that what will happen when the object is
+created so basically assigning the instance variable to the objects. It means now objects are able to access instance variable and can use it accordingly.
+Java has default constructor but can also define our own constructor accordingly for our uses.
+
+. operator is used to like build a connection between reference variables to the name of the instance variables.
+this keyword is used to define the objects which is going to use the classes properties for the better understanding and uses.
+
+
+
