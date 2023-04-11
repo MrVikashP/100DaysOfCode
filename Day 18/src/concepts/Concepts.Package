@@ -1,0 +1,15 @@
+Classes are where we write our programs so it is used to say that naming of a class says a lot and we always wanted to
+store in a structured manner to access these and looks clean when come to visibility and make it efficiently accessible.
+
+Packages are just folders, a compartment can say or boxes where class names are stored in a structured manner that looks good.
+It maintains the hierarchical order in which it stored and also different things inside it.
+Since same class name cannot store in a single package but can be stored in a different package with a different name
+
+Package basically tells the order in which our files are where we made a project. It makes the visibility more clean and fine.
+
+Import statement are often can be seen in any class that tells the order where that class is located and other import statements
+are for the those methods and properties we are using. In a class we write different methods or other class's stuff, when we run that
+class if there is main and using those methods we must tells the java at the runtime that what we are using and from where that comes
+so that without errors we are able to use those and got different results accordingly.
+
+Time to code ...

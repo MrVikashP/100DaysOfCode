@@ -1,0 +1,31 @@
+Classes are named group of properties and methods. For accessing everything we must create an instance of it.
+Suppose there is need of some property which is not dependent on the objects. Those are static members of the classes
+
+Static members can be any properties like instance variables or methods. They can be accessed without creation of objects.
+
+For every objects will have the same value for the static properties since it is independent of objects and is accessible
+with the class name which is right way to address it.
+
+Static members belongs to class not objects that is they are special than other properties since for accessing those
+there must be an instance of the class.
+
+Time to code...
+
+main method is static in every class why ??
+To run a program main is the first thing that is gonna run or can say that main method is responsible to execution for a
+program as we can see if we dont write main method there is no sign come to run a program ans as we write it there is
+automatically run button gets ready to do its job.
+
+so if main is responsible for all of these then how can we run a program to create an object if it is the first thing that runs
+that is why it is made static for every class because of its nature and working.
+
+One thing to always keep in mind that if something is static we cannot use not static thing without using their class
+instance for making it usable. for everything that is used in the main method should be static or accessed by an instance of
+required class.
+
+Static Block
+If there is task to initialize the static properties we use static block and it runs once only. When the class loads for the
+first time means when the first object is created then it loads and does its own work and then will not run again if any object
+gets created, if we run the program static things are first who gets executed followed by others.
+
+Time to code...
