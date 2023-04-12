@@ -2,13 +2,13 @@ package array_problems;
 
 public class FindCeiling {
     // find ceiling of a number
-    // ceiling number is the smallest number that is greater or equal to the target element.
+    // ceiling number is the smallest number >= Target Element
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18};
         System.out.println(findCeiling(arr,1));
     }
 
-    static int findCeiling(int[] arr, int target){
+    static int findCeiling (int[] arr, int target){
         // since the array is sorted we can apply binary search
         // if mid-element is equal to target then return the ans
         // if something greater found than target then check on the left side to get the smaller one than that

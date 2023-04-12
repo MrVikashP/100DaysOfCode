@@ -2,7 +2,7 @@ package array_problems;
 
 public class FindFloor {
     // find floor of a number
-    // floor number is the largest number that is smaller or equal to the target element.
+    // floor number is the largest number <= target element
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,17,18};
         System.out.println(findFloor(arr,19));
