@@ -8,6 +8,7 @@ public class DuplicateNumbers {
     }
 
     static int findDuplicates(int[] nums){
+
         int i = 0;
         while (i < nums.length){
             int correctIndex = nums[i] - 1;
@@ -27,6 +28,7 @@ public class DuplicateNumbers {
         return -1;
     }
     static void swap(int[] nums, int first, int second){
+
         int temp = nums[first];
         nums[first] = nums[second];
         nums[second] = temp;

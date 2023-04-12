@@ -24,6 +24,7 @@ public class MissingNumber {
                 start++;
             }
         }
+
         // search for the missing number
         // case 1
         for (int index = 0; index < length; index++) {
