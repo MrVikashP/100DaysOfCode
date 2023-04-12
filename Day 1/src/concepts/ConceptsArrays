@@ -96,3 +96,4 @@ the size and then old elements are copied in the new arraylist and do the same i
 deleted automatically due to garbage collector since the objects which do not have any use deleted from the heap.
 
 for multidimensional arraylist it works same as 2d arrays for the conceptual thing and rest will understand by coding.....
+It is very useful to understand and use it efficiently make life easier.
