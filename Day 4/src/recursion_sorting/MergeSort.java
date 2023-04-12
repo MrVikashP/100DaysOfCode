@@ -12,7 +12,7 @@ public class MergeSort {
     }
     static int[] sort(int[] arr){
         // base condition
-        // when only one item left return it
+        // when only one element left return it
         if (arr.length == 1){
             return arr;
         }
