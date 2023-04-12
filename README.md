@@ -1,2 +1,2 @@
 # 100DaysOfCode - Roller Coaster Ride :)
-## Journey that defines disciplines, dedication and dignity !
+## Journey that defines desire, dedication and dignity !
