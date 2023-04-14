@@ -1,0 +1,10 @@
+Wrapping up the implementation of the data members or methods inside a class -  basic definition
+It hides the code and other data members into a single entity so that it can be protected from outside world
+
+Encapsulation is a implementation level concept, it focuses in the internal working of the code
+It basically bundles the properties in the class
+
+Data Hiding focuses on the security of the instance variable.
+whereas Encapsulation focuses on hiding the complexity of the system
+
+Encapsulation is the sub process in doing data hiding.

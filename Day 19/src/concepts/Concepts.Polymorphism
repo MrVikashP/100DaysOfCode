@@ -1,0 +1,17 @@
+Poly - many ways, Morphism - to represent something
+so same thing can be represented in many ways for eg. there are multiple constructor with same name having different features.
+same functions can be used for different purposes following polymorphism.
+
+Compile time polymorphism - method overloading, called static too,  early binding
+for eg. Different constructor calling since having same name but differs with the features or other methods we can make
+with the same name which can be differ by its arguments and type of return so it all manages at the compile time
+
+Run time polymorphism - method overriding, called dynamic too. late binding
+when the same method is defined in different classes which which one to pick is a part of runtime polymorphism
+Dynamic method dispatch means that at runtime Java will determine which one to access.
+
+Final class cannot be overridden, it implicitly defines all its properties final too.
+Static methods cannot be overridden, because overriding needs object but static does not.
+
+Overriding does not work on the instance variable.
+

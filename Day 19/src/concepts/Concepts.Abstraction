@@ -1,0 +1,7 @@
+Hiding the unnecessary details but only showing the essential details.
+It means basically that we don't care about the implementation but only need to do our work.
+
+for eg. we often ArrayList, Arrays, String....
+So we are in a rush of using those important methods rather than checking each methods that how's being implemented internally.
+
+Abstraction is a design level concept, it focuses on external working

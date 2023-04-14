@@ -1,0 +1,23 @@
+Inheritance from the word itself explains a lot. It somehow means that properties are being passed from one generation to another.
+for eg. Parents properties like assets, looks, ethics are transferred to their child. It means that child can use those properties
+without having them to their own. But parents cannot use the things that a child have.
+
+Base class is the one who's being inherited, child class is the one who's inheriting those properties.
+Child class can have their properties too if in extra they need but Parent class cannot access these properties.
+"extends" keyword is used to inherit parent class.
+
+time to code...
+
+Types of Inheritance
+1. Single level Inheritance - Single Parent class and single child class
+   a <- b, a is parent and b is inheriting properties
+2. Multilevel Inheritance - It is same as the single level but here child class of the parent also inherited by different class
+   a <- b <- c, Parent
+3. Multiple Inheritance - When there is two parent class for one base class but it is not possible in java
+Java do not support multiple inheritance because it is quite tough for the base class that to choose in between the properties
+of the parent if both of them have the same one also calling constructor is not well defined to do this.
+
+4. Hierarchical Inheritance - Same as single or multiple level inheritance, Since one parent class can have multiple child and
+same happens with the child class when they become parent for others.
+
+
