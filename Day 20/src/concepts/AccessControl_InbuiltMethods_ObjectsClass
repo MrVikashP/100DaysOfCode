@@ -1,0 +1,32 @@
+Data hiding is the popular practices that needs to be done. for eg. you are creating a class and defining different
+instance variables and the methods but it is a good practice to protect the data members of a class from outside.
+That is where data hiding comes into the picture and using Encapsulation we can also hide the system complexity and
+the  all the required properties of the class is protected from which you want it to be.
+For accessing the members that are hidden in the class using getters and setters for the further use cases. It can be
+implemented for all the instance variable so without directly accessing it we can do further operations on it.
+
+Access Modifiers :-
+1. Private - It is very simple, those properties in the class which are private then they can be accessed in that class only.
+2. Default - If you are not specifying anything as a prefix in the properties of the classes then it is a default feature,
+   then it can be accessed within class, in the same package, in the subclass of the same package.
+3. Protected - When any properties of the class is protected then it can accessed same as Default and as add on it can also
+   be accessed by the sub class in the different package.
+4. Public -  Can be accessed anywhere, no need to discuss on it. It's just simple to use anywhere accordingly.
+
+
+You can define your own class, your methods, your packages according to the uses. But there are multiple inbuilt packages
+that includes different classes with the essential methods for the further use cases.
+1. lang - for language specific things
+2. i/o - for input-output related things.
+3. utility - for the utility things, different important classes mainly different data structures
+4. applets - different development stuff..
+5. awt - different development stuff..
+6. net - network related things
+
+Objects class
+It is the superclass of every class that is created by you or inbuilt ones. Those classes can use the properties of the
+objects class. It is not like if a class is extending another class then also internally it is extending the object class.
+
+Different methods are there you can use it accordingly for the different use cases according to the condition.
+Different annotation are interface by nature.
+Interface inherit another interface using extend keyword. cannot inherit another class.

@@ -1,0 +1,29 @@
+Abstraction basic definition you get it, now its time to understand its use cases.
+For eg. There is class and there are subclass of it. Then what is so special about it since all other class exists like it.
+
+Abstract class are different from other classes on the basis of defining its properties and some limitations
+Properties of abstract classes :-
+1. there must be at least one abstract method inside it - abstract methods are those where body is not defined, they must be
+   overridden from the child class with their own bodies.
+2. You can create a reference of abstract class pointing to the child class object and then can use other properties defined.
+   But you can not create an object of it own without overriding the abstract methods.
+3. You cannot make abstract class as final since then they cannot be overridden that is why final with abstraction is not possible.
+4. normal instance variable can be defined, static ones can be defined. same applies to methods also.
+5. abstract methods cannot be static because it does not depends on the objects and abstract are meant to be overridden.
+6. Constructors cannot be abstract because since object cannot be created or if created then it does not know what will happen
+   since the body is not defined and so it can't possible.
+7. You can also have final variables which can be assigned values using constructors changes via child classes.
+8. It behaves like a normal class when comes to inheriting properties of it. You can not inherit more than one abstract
+   class at the same time. Rest all things same.
+
+Interfaces :- It is a special abstract class but not covers the class properties so it is called interfaces. Interfaces
+are powerful property since it makes possible to use multiple inheritance.
+
+Properties of interfaces :-
+1. Methods inside it are public and abstract by nature.
+2. Variables are static and final by default.
+3. Static method will always have body.
+
+You cannot instantiate interfaces at all. Since creating constructors are not allowed at all.
+
+For overriding things access modifiers must be same or above that, otherwise it will show error.
