@@ -1,4 +1,4 @@
-package cloning;
+package oops.cloning;
 
 public class Human implements Cloneable {
     @Override
